@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    
+        <div class="login-form">
+            
+            <h2>Welcome back</h2>
+            <form   method="post" action="../backend/login.php" >
+                <input type="text" placeholder="UserName" required name="ppo">
+                <i class="fas fa-user icon"></i>
+        
+                <input required type="password" placeholder="Password" name="poped">
+                <i class="fas fa-lock icon"></i>
+    
+            <button type="submit">Login</button>
+            </form>
+
+        </div>
+
+</body>
+
+<style>
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    color: aliceblue;
+    background-image: url(../pics/2632555.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+.lol{
+    height: 500px;
+}
+
+form i{
+    position:relative;
+    bottom: 13%;
+    left: 40%;
+    padding-bottom: 25px;
+}
+    .login-form
+    {
+        height: 400px;
+        width: 350px;
+        background: transparent;
+        display: flex;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+        border: 3px solid white;
+        backdrop-filter: blur(5px); 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        color: aliceblue;
+        margin-left: 16%;
+    }
+
+    .login-form h2{
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    form{
+        color: aliceblue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 300px;
+    }
+    form input{
+        color: aliceblue;
+        width: 100%;
+        padding: 8px 5px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+
+    }
+    .col-2-container h1{
+        font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    }
+    form input::placeholder{
+        color: white;
+    }
+    form button{
+        padding: 10px 15px;
+        width: 100px;
+        margin-top: 25px;
+        text-align: center;
+        border-radius: 20px;
+    
+     
+       }   button:hover{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+
+        }
+    
+    form a{
+        margin-top:25px;
+        padding: 10px;
+        color: white;
+    }
+    
+
+
+
+
+</style>
+</html>
+

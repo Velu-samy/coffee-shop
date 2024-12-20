@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body style="background-color: white;">
+    <header class="Home" id="home">
+        <div id="overlayblack" class="overlay">
+
+        </div>
+        <div id="overlaybox" class="overlay-box">
+            <input type="text">
+
+            <a onclick="closes()"> <i style="color: white;font-size: 20px; margin-left: 10px; padding-top: 8px;"
+                    class="fa fa-times"></i>
+            </a>
+        </div>
+        <div class="nav">
+
+            <h1  data-aos="fade-down" data-aos-duration="1000">Bean <span>Heaven</span></h1>
+            
+            <ul id="open-nav">
+                <div   class="cross-d">
+                  
+                <a onclick="closeb()"><i style="color: white; font-size: 20px;margin-top: 30px;"  class="fas fa-times"></i></a> 
+                <a  class="opo" style="color: white; margin-top: 30px; margin-right: 30px;" href="login.html">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+                 <li  data-aos="fade-down" data-aos-duration="1000"><a href="#home">Home</a></li>
+                 <li data-aos="fade-down" data-aos-duration="1500"><a href="#product">Products</a></li>
+                 <li data-aos="fade-down" data-aos-duration="2000"><a href="#about">About us</a></li>
+                 <li data-aos="fade-down" data-aos-duration="2500"><a href="#feedback">Contact</a></li>
+                 <li data-aos="fade-down" data-aos-duration="2600"><a href="#booking">Book a table</a></li>
+                 
+             </ul>
+            <div class="h-icons" data-aos="fade-down" data-aos-duration="2600">
+                <a style="color: white;" href="login.html">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a onclick="opens()"> <i class="fa fa-search"></i></a>
+            </div>
+            <div class="white-box" >
+               <a onclick="openb()"><i class="fas fa-bars"></i></a> 
+                <a onclick="opens()"> <i class="fa fa-search"></i></a>
+    
+            </div> 
+        </div>
+        <div class="header-contents" >
+            <div class="social-icon" data-aos="zoom-out-right" data-aos-duration="2600"> <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a> <a
+                    href="https://www.twitter.com"><i class="fab fa-twitter"></i></a> <a
+                    href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            
+            <div class="header-contents2" data-aos="zoom-out-right"  data-aos-duration="2600">
+               
+                <h2 class="h-2">Welcome to <span>Bean heaven</span></h2>
+                <p style="margin-top: 50px;" class="notfordesk">At Bean Haven, we believe that every cup of coffee should be an experience.</p>
+                <p class="notforphone">At Bean Haven, we believe that every cup of coffee should be an experience.<br> Our cozy atmosphere
+                    and expertly brewed beverages offer the perfect escape<br> from the hustle and bustle</p>
+                <button>Book<span></span></button>
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <section class="product" id="product" >
+        
+        <div class="headling-p">
+            <h1> Our <span>Products</span></h1>
+        </div>
+        <div class="product-container">
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p1.png" alt="">
+                <div class="content-p">
+                    <h2>Arabica coffe </h2>
+                    <br>
+                    <p>Sourced from high altitudes, Arabica beans are prized for their smooth</p>
+                    <h3>20$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p2.png" alt="">
+                <div class="content-p">
+                    <h2>Boterd Coffee</h2>
+                    <br>
+                    <p>Unveiling the Secret Agitation for Enhanced Flavor</p>
+                    <h3>20$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p3.png" alt="">
+                <div class="content-p">
+                    <h2>PatchRoast coffe </h2>
+                    <br>
+                    <p>Revolutionizing Your Morning Brew with Precision Craftsmanship</p>
+                    <h3>20$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p4.png" alt="">
+                <div class="content-p">
+                    <h2>SacredGrounds Coffee </h2>
+                    <br>
+                    <p>Brewing Tales of Haunted Coffee Plantations</p>
+                    <h3>25$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p5.png" alt="">
+                <div class="content-p">
+                    <h2>SacredGrounds </h2>
+                    <br>
+                    <p>Sourced from high altitudes, Arabica beans are prized for their smooth</p>
+                    <h3>20$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p6.png" alt="">
+                <div class="content-p">
+                    <h2>Presto </h2>
+                    <br>
+                    <p>Savor the Magic of Presto Coffee</p>
+                    <h3>50$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/p1.png" alt="">
+                <div class="content-p">
+                    <h2>Arabica coffee</h2>
+                    <br>
+                    <p>Sourced from high altitudes, Arabica beans are prized for their smooth</p>
+                    <h3>20$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-1"  data-aos="zoom-in" data-aos-duration="1000">
+                <img src="../pics/kraft_blank_final_latest_ceb73027-2baa-4e26-9c6b-1e0f54c12462.webp" alt="">
+                <div class="content-p">
+                    <h2>Mystic bean</h2>
+                    <br>
+                    <p>Discover the Enchantment of Mystic Bean</p>
+                    <h3>20$</h3>
+                    <button>Oder Now</button>
+                    <div class="content-i">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="aboutus-container">
+            <div class="row">
+                <div class="col" data-aos="zoom-in-right" data-aos-duration="1000">
+                    <img src="../pics/aboutpg.jpg" alt="">
+                </div>
+                <div class="col-2" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <div class="col-2-container">
+                        <h1 style="font-size: 40px; padding-left: 10px;padding-bottom: 5px;">About us</h1>
+                        <p>At our Coffe Shop, we source the finest beans from sustainable farms around the world. Each
+                            cup is crafted with love and care by our expert baristas, ensuring that every sip is a
+                            perfect blend of rich flavors and aromas.
+                            <br> <br>Whether you prefer a robust espresso, a silky latte, or a refreshing cold brew, we
+                            have something to delight your taste buds
+                            But we're more than just coffee. Our cozy ambiance, filled with the aroma of freshly brewed
+                            coffee and the sounds of cheerful chatter, makes us a favorite spot for friends, families,
+                            and individuals seeking a moment of peace. We believe in fostering a sense of community,
+                            where everyone feels welcome and valued.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback" style="margin-top: 50px;"  id="feedback">
+
+        <div class="feedback-container" style="margin-top: 50px;">
+            <h2>Any Doubts <span style="color: #D2B48C;">Clarify</span> Here</h2>
+            <div class="feedback-input">
+                <input type="text">
+                <button>Enter</button>
+            </div>
+        </div>
+    </section>
+    <section class="booking-c" id="booking" style="background-color:#D2B48C;" style="padding-top: 40px;">
+        <section class="booking">
+            <div class="form-container">
+                <form  id="booking-form" action="../backend/bookingdetails.php" method="post">
+                    <h1 style="text-align: center;">Make Your <span>Coffee</span> Moments Special <br> Reserve Your
+                        Table! </h1>
+                    <div class="row-b">
+                        <div class="col-1">
+                            <div class="form-grp">
+                                <span>First Name</span>
+                                <input  required  name="fn"   type="text">
+                            </div>
+                            <div class="form-grp">
+                                <span>How Many Member</span>
+                                <input required  max="10" min="1"   name="mb"   type="number">
+                            </div>
+                            <div class="form-grp">
+                                <span>Date Of Booking</span>
+                                <input  required  type="datetime-local"      name="dt" >
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-grp">
+                                <span>Last Name</span>
+                                <input required   name="ln"  type="text">
+                            </div>
+                            <div class="form-grp">
+                                <span>Phone Number</span>
+                                <input required type="tel" name="phonenumber"  pattern="[0-9]{10}" >
+                            </div>
+                            <div class="form-grp">
+                                <span>Coffee Name</span>
+                                <select  id="coffee" name="cn" required>
+                                    <option value="Espresso">Espresso</option>
+                                    <option value="Cappuccino">Cappuccino</option>
+                                    <option value="Latte">Latte</option>
+                                    <option value="Americano">Americano</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-f">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+               
+            </div>
+
+        </section>
+    </section>
+
+
+    <section class="footer" >
+
+        <div class="footer-container">
+            <div class="footer-1" data-aos="fade-zoom-in">
+                <img src="../pics/logo.png" style="height: 140px;" alt="">
+                <br>
+                <p>Thanks for visiting us! <br>Happy Coffee Day!</p>
+            </div>
+            <div class="footer-1" data-aos="fade-zoom-in" >
+                <h2>Extra Links</h2>
+                <a href="#">Payment Method<i class="fas fa-arrow-right"></i></a>
+                <a href="#">Acc info <i class="fas fa-arrow-right"></i></a>
+                <a href="#">About us <i class="fas fa-arrow-right"></i></a>
+                <a href="#">Login <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="footer-1" data-aos="fade-zoom-in" >
+                <h2> Quick Links</h2>
+                <a href="#">Home <i class="fas fa-arrow-right"></i></a>
+                <a href="#">product <i class="fas fa-arrow-right"></i></a>
+                <a href="#">Feedback <i class="fas fa-arrow-right"></i></a>
+                <a href="#">Booking <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="footer-1" data-aos="fade-zoom-in">
+                <h2>Contact Info</h2>
+                <p>91+8072622991</p>
+                <a href="#">www.BeanHeaven.com</a>
+            </div>
+
+        </div>
+        <div class="footer-i">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+
+    </section>
+    <script>
+        const bin = document.getElementById("overlayblack");
+        const din = document.getElementById("overlaybox");
+        function opens() {
+            bin.style.display = "block"
+            din.style.display = "block";
+        }
+        function closes() {
+            bin.style.display = "none"
+            din.style.display = "none";
+
+        }
+
+        const open_n = document.getElementById("open-nav");
+   
+
+        function openb() {
+            open_n.style.left = '-1%';
+
+        }
+
+        function closeb(){
+            open_n.style.left = '-90%';
+
+        }
+       
+       AOS.init();
+
+
+
+
+
+    </script>
+  
+</body>
+
+
+</html>
